@@ -1,0 +1,493 @@
+@import 'mixins';
+
+@font-face {
+    font-family: 'Pokemon Hollow';
+    src:url("fonts/Pokemon Hollow.ttf");
+}
+
+@font-face {
+    font-family: 'Pokemon Solid';
+    src:url("fonts/Pokemon Solid.ttf");
+}
+
+$joyconBlue: #00c3e3;
+$joyconRed: #ff4554;
+$joyconGrey: #989898;
+$switchWhite: #ffffff;
+
+$pokeRed: #ee1515;
+$pokeGrey: #f0f0f0;
+$pokeBlack: #222224;
+
+$purple: #bd20f1;
+
+$bumperInnerBorder: rgba(255, 255, 255, 0.658);
+$controllerBorderSize: 500px;
+$controllerBorderSize: 000px;
+
+$graphBoxShaddow: rgba(54, 117, 128, 0.726);
+
+// $graphBoxShaddow: #00c3e3;
+
+// $graphBoxShaddow: rgb(66, 165, 66);
+
+
+
+// $graphBoxShaddow: #b5cf40;
+
+// $graphBoxShaddow: #c5cca5;
+// $graphBoxShaddow:#a2bd2c;
+// $bumperInnerBorder: #206d79;
+
+// $backgroundUrl: "https://bestwallpapers.co/wp-content/uploads/2018/05/wallpaper-design-awards-application-for-home-singapore-designs.jpg";
+
+$backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-2505529.jpg";
+*{
+    box-sizing: border-box;
+    
+    
+}
+
+// body {
+//     // background: url("https://wallpaperstudio10.com/static/wpdb/wallpapers/1920x1080/169322.jpg") no-repeat center center fixed;
+//     background: url($backgroundUrl) no-repeat center center fixed;
+//     // background-size: 2000px 500px;
+    
+//     // background-image: url("https://images.unsplash.com/photo-1474540412665-1cdae210ae6b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=eaebfb6af1f3014a7b193b43d1a96d7b&w=1000&q=80")
+    
+// }
+
+#btn1 {
+    height: 50px;
+    width: 50px;
+    
+}
+
+// #body {
+//     cursor: progress;
+// }
+
+
+.btn-primary {
+    color: #fff;
+    background-color: white;
+    border-color: white;
+    cursor: default;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: white;
+    border-color: white;
+    cursor: default;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: 0 0 0 0 white
+}
+
+.modal {
+
+    // fits width of inner inner screen
+    width: 42%;
+    margin: auto;
+  }
+
+//   .modal {
+
+//     // second try
+//     width: 15%;
+//     margin: auto 29% auto auto;
+//   }
+
+.modal-content {
+    // Good start
+    // border-radius: 50%;
+    top:  144px;
+    height: 420px;
+    // width: 100%;
+    border-radius: 1%;
+    // background-color: #989898;
+    // display: none;
+}
+
+// .modal-content {
+//     // second try
+//     // border-radius: 50%;
+//     top:  144px;
+//     height: 410px;
+//     // width: 100%;
+//     border-radius: 10%;
+//     // background-color: #989898;
+//     // display: none;
+// }
+
+#firstModal {
+    // @include flexContainer(auto, 100%, 0px solid green, row);
+    @include flexContainer(0px, 0px, 0px solid green, row);
+    // margin: auto;
+    // position: absolute;
+    top: 480px;
+    // left: 60%;
+    // width: 100%;
+    justify-content: center;
+    left: 13.65%;
+    // font-family: Pokemon Solid;
+    // letter-spacing: 50px;
+    // display: hidden;
+    // z-index: -99;
+    font-family: Pokemon Solid;
+    letter-spacing: 10px;
+    font-size: 30px;
+    // color: #8e6ad1;
+    // color: rgb(91, 139, 77);
+    color: $pokeGrey;
+    // color: #8bd16a;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+.modal-title {
+    font-family: Pokemon Solid;
+    letter-spacing: 5px;
+    color: #f85d6a;
+}
+
+#closeButton {
+    letter-spacing: 3px;
+    background-color: $joyconBlue;
+}
+
+#fake {
+    @include flexContainer(40%, 100%, 0px solid red, row);
+    outline: none; 
+    cursor: pointer;
+}
+
+#pushaT {
+    display: none;
+}
+
+#firstModal:hover {
+    // position:static;
+}
+// .modal-backdrop {
+//     position: fixed;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//     z-index: 1040;
+//     background-color: white;
+//     background-color: transparent;
+// }
+
+// #modyButton {
+//     background-color: white;
+//     border: 0px solid white;
+// }
+// .modal-backdrop.in {
+//     // filter: alpha(opacity=50);
+//     opacity: 2;
+// }
+
+// #firstModal {
+//     @include flexContainer(auto, 100%, 0px solid green, row);
+//     // margin: auto;
+//     position: absolute;
+//     top: 0;
+//     // top: 357px;
+//     // left: 60%;
+//     // width: 100%;
+//     justify-content: center;
+//     // left: 13.65%;
+//     // font-family: Pokemon Solid;
+//     // letter-spacing: 50px;
+//     // border-radius: 50%;
+//     // z-index: -1;
+//     opacity: 1;
+//     background-color: black;
+    
+// }
+
+#boss {
+    @include flexContainer(600px, 80%, 0px solid green, row);
+    // @include flexContainer(600px, 1200px, 0px solid green, row);
+    // margin: 180px auto auto auto;
+    margin: 80px auto auto auto;
+    justify-content: center;
+    max-width: 1250px; 
+    min-width: 1000px;
+    // overflow: hidden;
+}
+
+@media only screen and (max-width: 1000px) {
+    #boss {
+        overflow: hidden;
+    }
+}
+
+#controllerLeft{
+    @include flexContainer(100%, 16%, 0px solid rgba(0, 9, 128, 0.527), row);
+    background-color: $joyconBlue;
+    border-top-left-radius: 200px 80px;
+    border-bottom-left-radius: 200px 80px;
+    box-shadow: 0px -10px rgba(34, 33, 33, 0.945);
+    border-top: $controllerBorderSize solid $bumperInnerBorder;
+    // border-left: 0px solid black;
+    
+}
+
+#mainScreenParent {
+    @include flexContainer(100%, 68%, 0px dashed green, row);
+    background-color: $joyconGrey;
+    display: none;
+    border-radius: .2%;
+    justify-content: center;
+    opacity: .9;
+    animation-name: intro;
+    animation-delay: 0;
+    animation-duration: 1500ms;
+    
+}
+
+#mainScreenBorder {
+    @include flexContainer(95%, 95%, 0px dashed rgba(255, 0, 0, 0.534), row);
+    background-color: black; 
+    border-radius: 5%;
+    margin: 13px auto auto auto;
+    opacity: 1;
+    // box-shadow: 5px 10px rgb(34, 33, 33);
+    
+    
+}
+
+#screen{
+    @include flexContainer(90%, 88%, 0px dashed rgba(85, 69, 69, 0.534), column);
+    background-color: $switchWhite;
+    margin: auto; 
+    border-radius: 1%;
+}
+
+#header {
+    @include flexContainer(10%, 100%, 0px solid green, row); 
+}
+#name {
+    @include flexContainer(80%, 30%, 0px solid green, row);  
+    margin: auto;
+    justify-content: center;
+    font-size: 26px;
+    font-family: Pokemon Solid;
+    // color: #64D364;
+    color: $pokeBlack;
+    // color: $pokeGrey;
+    // color: white;
+    // background-color: $joyconGrey;
+    letter-spacing: 20px;
+    // border-radius: 50%;
+    // font-style: italic;
+    text-shadow:
+		-1px -1px 0 $joyconGrey,
+		1px -1px 0 $joyconGrey,
+		-1px 1px 0 $joyconGrey,
+		3px .5px 0 $joyconGrey;
+}
+
+#imageAndSkillsContainer {
+    @include flexContainer(80%, 100%, 0px solid green, row);
+}
+
+#imageParent {
+    @include flexContainer(100%, 60%, 1px solid green, row);
+    margin-left: 5%;
+}
+
+#image {
+    height: 100%;
+    width: 100%;
+}
+
+#skillsParent{
+    @include flexContainer(100%, 30%, 1px solid green, column);
+    margin-right: 5%;
+}
+
+.threeCol {
+    @include flexContainer(20%, 100%, 1px solid green, row);
+    font-family: Pokemon Solid;
+    // border-bottom: 0px solid green;
+}
+
+#abilitiesContainer {
+    @include flexContainer(40%, 100%, 1px solid green, column);
+    font-family: Pokemon Solid;
+    display: none;
+}
+
+
+#abilitiesStaticText{
+    @include flexContainer(15%, 100%, 1px solid green, row);
+    text-align: center;
+    // justify-content: center;
+    // font-family: Pokemon Hollow;
+    background-color: yellow; 
+}
+
+#abilitiesDynamicTextContainer{
+    @include flexContainer(85%, 100%, 1px solid green, row);
+}
+
+#listOfAbilities {
+    @include flexContainer(80%, 100%, 1px solid red, row);
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+#hpParent {
+    @include flexContainer(25%, 00%, 1px solid green, row);
+    background-color: yellow; 
+    box-shadow: 2px 2px $graphBoxShaddow;
+}
+
+#hpNumber {
+    @include flexContainer(55%, 50%, 0px solid green, row);
+    margin: auto 0 0 auto;
+    text-align: right;
+    font-size: 40px;
+    overflow: hidden;
+} 
+
+#attackParent {
+    @include flexContainer(25%, 0%, 1px solid green, row);
+    background-color: yellow; 
+    box-shadow: 2px 3px $graphBoxShaddow;
+    // overflow: hidden;
+    
+}
+
+#attackNumber {
+    @include flexContainer(55%, 50%, 0px solid green, row);
+    margin: auto 0 0 auto;
+    text-align: right;
+    font-size: 40px;
+    overflow: hidden;
+}
+
+#defenseParent {
+    @include flexContainer(25%, 00%, 1px solid green, row);
+    background-color: yellow; 
+    box-shadow: 2px 2px $graphBoxShaddow;
+    
+}
+
+#defenseNumber {
+    @include flexContainer(55%, 50%, 0px solid green, row);
+    margin: auto 0 0 auto;
+    text-align: right;
+    font-size: 40px;
+    overflow: hidden;
+}
+
+
+#controllerRight{
+    @include flexContainer(100%, 16%, 0px solid green, row);
+    background-color: $joyconRed;
+    border-top-right-radius: 200px 80px;
+    border-bottom-right-radius: 200px 80px;
+    box-shadow: 0px -10px rgba(34, 33, 33, 0.945);
+    border-top: $controllerBorderSize solid $bumperInnerBorder;
+}
+
+#start {
+    position: absolute;
+    top: 200px;
+    left: 37.5%;
+    width: 25%;
+    height: 350px;
+    border-radius: 50%;
+    // border-bottom: 10px solid black;
+    font-size: 20px;
+    background: linear-gradient(180deg, $pokeRed 50%, $pokeGrey 50%);
+    border: 12px solid $pokeBlack;
+    animation: spin;
+    animation-duration: 800ms;
+    animation-iteration-count: 1;
+}
+
+#circle {
+    height: 25%;
+    width: 25%;
+    margin: auto;
+    background-color: $pokeGrey;
+    border-radius: 50%;
+    border: 10px solid $pokeBlack;
+
+}
+
+@keyframes intro {
+    0%   {opacity: 0;}
+    50%  {opacity: .6;}
+    100% {opacity: .9;}
+}
+
+#sliderLeftContainer {
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    border: 0px solid black;
+    font-size: 100px;
+    justify-content: center;
+    text-align: center;
+}
+
+#sliderRightContainer {
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    border: 0px solid black;
+    font-size: 100px;
+    justify-content: center;
+    text-align: center;
+}
+
+#prev{
+    font-size: 200px;
+    background-color: $joyconBlue;
+    border: $joyconBlue;
+    text-align: center;
+    margin: auto;
+    top: 200px;
+    color: $pokeBlack;
+    outline: none;
+    display: none;
+    cursor: pointer;
+}
+
+
+
+#next{
+    font-size: 200px;
+    background-color: $joyconRed;
+    border: $joyconBlue;
+    text-align: center;
+    margin: auto;
+    top: 200px;
+    color: $pokeBlack;
+    display: none;
+    outline: none;
+    cursor: pointer;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+        opacity: 0;
+    }
+    to {
+        transform:rotate(360deg);
+        opacity: 1;
+    }
+}

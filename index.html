@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pokemon Switch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="pokemonSwitch.css" />
+
+
+</head>
+
+<body id="body">
+
+    <div id="boss">
+        <div id="controllerLeft">
+            <div id="sliderLeftContainer">
+                <button id="prev" onclick="slidePrev()"> &#8249</button>
+
+            </div>
+        </div>
+        <div id="mainScreenParent">
+            <div id="mainScreenBorder">
+                <div id="screen">
+                    <div id="header">
+                        <div id="name">
+                          
+                        </div>
+                    </div>
+                    <div id="imageAndSkillsContainer">
+                        <div id="imageParent">
+                            <img id="image">
+                        </div>
+                        <div id="skillsParent">
+                            <div class="threeCol">
+                                <div id="hpParent">
+                                    <div id="hp">HP</div>
+                                </div>
+                                <div id="hpNumber">
+                                    <!-- R -->
+                                </div>
+                            </div>
+                            <div class="threeCol">
+                                <div id="attackParent">
+                                    <div id="attack">Attack</div>
+
+                                </div>
+                                <div id="attackNumber">
+                                    <!-- T -->
+                                </div>
+                            </div>
+                            <div class="threeCol">
+                                <div id="defenseParent">
+                                    <div id="defense">Defense</div>
+                                </div>
+                                <div id="defenseNumber">
+                                    <!-- S -->
+                                </div>
+                            </div>
+                            <button id="fake"></button>
+
+
+                            <!-- <div id="abilitiesContainer" onmouseover="displayAbilities()">
+                                                            <div id="abilitiesStaticText">
+                                                                Abilities
+                                                            </div>
+                                                            <div id="abilitiesDynamicTextContainer">
+                                                                <div id="listOfAbilities"></div>
+                                                            </div>
+                                                        </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="controllerRight">
+            <div id="sliderRightContainer">
+                <button id="next" onclick="slideNext()"> &#8250</button>
+
+            </div>
+        </div>
+    </div>
+    <button id="start" onclick="initiate()">
+        <div id="circle"></div>
+    </button>
+    </div>
+    <div id="firstModal">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="modyButton">
+            Abilities
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Abilities</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="modyBody">
+
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <!-- <button id="prev" onclick="slidePrev()"> &#8249</button> -->
+                        <button id ="closeButton" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <audio controls autoplay id="pushaT">
+            <source src="/Users/bwexler/Desktop/WDF/w04/pokemon/PushaT.wav" type="audio/ogg">
+            <source src="/Users/bwexler/Desktop/WDF/w04/pokemon/PushaT.wav" type="audio/mpeg">
+          </audio>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <script src="pokemonSwitch.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

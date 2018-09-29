@@ -1,0 +1,605 @@
+@font-face {
+  font-family: 'Pokemon Hollow';
+  src: url("fonts/Pokemon Hollow.ttf");
+}
+
+@font-face {
+  font-family: 'Pokemon Solid';
+  src: url("fonts/Pokemon Solid.ttf");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#btn1 {
+  height: 50px;
+  width: 50px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: white;
+  border-color: white;
+  cursor: default;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: white;
+  border-color: white;
+  cursor: default;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+  -webkit-box-shadow: 0 0 0 0 white;
+          box-shadow: 0 0 0 0 white;
+}
+
+.modal {
+  width: 42%;
+  margin: auto;
+}
+
+.modal-content {
+  top: 144px;
+  height: 420px;
+  border-radius: 1%;
+}
+
+#firstModal {
+  height: 0px;
+  width: 0px;
+  border: 0px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  top: 480px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 13.65%;
+  font-family: Pokemon Solid;
+  letter-spacing: 10px;
+  font-size: 30px;
+  color: #f0f0f0;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.modal-title {
+  font-family: Pokemon Solid;
+  letter-spacing: 5px;
+  color: #f85d6a;
+}
+
+#closeButton {
+  letter-spacing: 3px;
+  background-color: #00c3e3;
+}
+
+#fake {
+  height: 40%;
+  width: 100%;
+  border: 0px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  outline: none;
+  cursor: pointer;
+}
+
+#pushaT {
+  display: none;
+}
+
+#boss {
+  height: 600px;
+  width: 80%;
+  border: 0px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 80px auto auto auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1250px;
+  min-width: 1000px;
+}
+
+@media only screen and (max-width: 1000px) {
+  #boss {
+    overflow: hidden;
+  }
+}
+
+#controllerLeft {
+  height: 100%;
+  width: 16%;
+  border: 0px solid rgba(0, 9, 128, 0.527);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #00c3e3;
+  border-top-left-radius: 200px 80px;
+  border-bottom-left-radius: 200px 80px;
+  -webkit-box-shadow: 0px -10px rgba(34, 33, 33, 0.945);
+          box-shadow: 0px -10px rgba(34, 33, 33, 0.945);
+  border-top: 0px solid rgba(255, 255, 255, 0.658);
+}
+
+#mainScreenParent {
+  height: 100%;
+  width: 68%;
+  border: 0px dashed green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #989898;
+  display: none;
+  border-radius: .2%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: .9;
+  -webkit-animation-name: intro;
+          animation-name: intro;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-duration: 1500ms;
+          animation-duration: 1500ms;
+}
+
+#mainScreenBorder {
+  height: 95%;
+  width: 95%;
+  border: 0px dashed rgba(255, 0, 0, 0.534);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: black;
+  border-radius: 5%;
+  margin: 13px auto auto auto;
+  opacity: 1;
+}
+
+#screen {
+  height: 90%;
+  width: 88%;
+  border: 0px dashed rgba(85, 69, 69, 0.534);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ffffff;
+  margin: auto;
+  border-radius: 1%;
+}
+
+#header {
+  height: 10%;
+  width: 100%;
+  border: 0px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#name {
+  height: 80%;
+  width: 30%;
+  border: 0px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 26px;
+  font-family: Pokemon Solid;
+  color: #222224;
+  letter-spacing: 20px;
+  text-shadow: -1px -1px 0 #989898, 1px -1px 0 #989898, -1px 1px 0 #989898, 3px 0.5px 0 #989898;
+}
+
+#imageAndSkillsContainer {
+  height: 80%;
+  width: 100%;
+  border: 0px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#imageParent {
+  height: 100%;
+  width: 60%;
+  border: 1px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 5%;
+}
+
+#image {
+  height: 100%;
+  width: 100%;
+}
+
+#skillsParent {
+  height: 100%;
+  width: 30%;
+  border: 1px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 5%;
+}
+
+.threeCol {
+  height: 20%;
+  width: 100%;
+  border: 1px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: Pokemon Solid;
+}
+
+#abilitiesContainer {
+  height: 40%;
+  width: 100%;
+  border: 1px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: Pokemon Solid;
+  display: none;
+}
+
+#abilitiesStaticText {
+  height: 15%;
+  width: 100%;
+  border: 1px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  background-color: yellow;
+}
+
+#abilitiesDynamicTextContainer {
+  height: 85%;
+  width: 100%;
+  border: 1px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#listOfAbilities {
+  height: 80%;
+  width: 100%;
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+#hpParent {
+  height: 25%;
+  width: 0%;
+  border: 1px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: yellow;
+  -webkit-box-shadow: 2px 2px rgba(54, 117, 128, 0.726);
+          box-shadow: 2px 2px rgba(54, 117, 128, 0.726);
+}
+
+#hpNumber {
+  height: 55%;
+  width: 50%;
+  border: 0px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: auto 0 0 auto;
+  text-align: right;
+  font-size: 40px;
+  overflow: hidden;
+}
+
+#attackParent {
+  height: 25%;
+  width: 0%;
+  border: 1px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: yellow;
+  -webkit-box-shadow: 2px 3px rgba(54, 117, 128, 0.726);
+          box-shadow: 2px 3px rgba(54, 117, 128, 0.726);
+}
+
+#attackNumber {
+  height: 55%;
+  width: 50%;
+  border: 0px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: auto 0 0 auto;
+  text-align: right;
+  font-size: 40px;
+  overflow: hidden;
+}
+
+#defenseParent {
+  height: 25%;
+  width: 0%;
+  border: 1px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: yellow;
+  -webkit-box-shadow: 2px 2px rgba(54, 117, 128, 0.726);
+          box-shadow: 2px 2px rgba(54, 117, 128, 0.726);
+}
+
+#defenseNumber {
+  height: 55%;
+  width: 50%;
+  border: 0px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: auto 0 0 auto;
+  text-align: right;
+  font-size: 40px;
+  overflow: hidden;
+}
+
+#controllerRight {
+  height: 100%;
+  width: 16%;
+  border: 0px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #ff4554;
+  border-top-right-radius: 200px 80px;
+  border-bottom-right-radius: 200px 80px;
+  -webkit-box-shadow: 0px -10px rgba(34, 33, 33, 0.945);
+          box-shadow: 0px -10px rgba(34, 33, 33, 0.945);
+  border-top: 0px solid rgba(255, 255, 255, 0.658);
+}
+
+#start {
+  position: absolute;
+  top: 200px;
+  left: 37.5%;
+  width: 25%;
+  height: 350px;
+  border-radius: 50%;
+  font-size: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #ee1515), color-stop(50%, #f0f0f0));
+  background: linear-gradient(180deg, #ee1515 50%, #f0f0f0 50%);
+  border: 12px solid #222224;
+  -webkit-animation: spin;
+          animation: spin;
+  -webkit-animation-duration: 800ms;
+          animation-duration: 800ms;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+#circle {
+  height: 25%;
+  width: 25%;
+  margin: auto;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  border: 10px solid #222224;
+}
+
+@-webkit-keyframes intro {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .6;
+  }
+  100% {
+    opacity: .9;
+  }
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .6;
+  }
+  100% {
+    opacity: .9;
+  }
+}
+
+#sliderLeftContainer {
+  height: 50%;
+  width: 50%;
+  margin: auto;
+  border: 0px solid black;
+  font-size: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+#sliderRightContainer {
+  height: 50%;
+  width: 50%;
+  margin: auto;
+  border: 0px solid black;
+  font-size: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+#prev {
+  font-size: 200px;
+  background-color: #00c3e3;
+  border: #00c3e3;
+  text-align: center;
+  margin: auto;
+  top: 200px;
+  color: #222224;
+  outline: none;
+  display: none;
+  cursor: pointer;
+}
+
+#next {
+  font-size: 200px;
+  background-color: #ff4554;
+  border: #00c3e3;
+  text-align: center;
+  margin: auto;
+  top: 200px;
+  color: #222224;
+  display: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=pokemonSwitch.css.map */

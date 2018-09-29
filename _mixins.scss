@@ -1,0 +1,7 @@
+@mixin flexContainer($height, $width, $border, $flexDirection ) {
+    height: $height;
+    width: $width;
+    border: $border;
+    display: flex;
+    flex-direction: $flexDirection;
+}
