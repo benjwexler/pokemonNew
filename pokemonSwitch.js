@@ -83,7 +83,7 @@ let nameOfPokemon = "jigglypuff";
 
 // link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
 link = "https://pokeapi.co/api/v2/pokemon/jigglypuff" 
-link = "//fizal.me/pokeapi/api/25.json"
+link = "//fizal.me/pokeapi/api/39.json"
 
 // link = "https://pokeapi-nycda.firebaseio.com/pokemon/39.json"
 
@@ -174,7 +174,7 @@ changePoke(link);
 nameOfPokemon = "charizard"
 // link = "https://pokeapi-nycda.firebaseio.com/pokemon/6.json"
 link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
-link = "//fizal.me/pokeapi/api/25.json"
+link = "//fizal.me/pokeapi/api/6.json"
 changePoke(link);
 
 nameOfPokemon = "pikachu"
