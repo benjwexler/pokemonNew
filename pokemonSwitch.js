@@ -1,5 +1,9 @@
 let percentAdded = 23;
 
+Console.log("Right version?")
+
+
+
 let initiate = () => {
     let mainScreenParent = document.getElementById("mainScreenParent");
     mainScreenParent.style.display="inline";
@@ -77,12 +81,14 @@ let ben = new Trainer();
 
 let nameOfPokemon = "jigglypuff";
 
-link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
+// link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
+link = "https://pokeapi.co/api/v2/pokemon/jigglypuff" 
 
 // link = "https://pokeapi-nycda.firebaseio.com/pokemon/39.json"
 
 function changePoke(link) {
     axios.get(link).then((response) => {
+        console.log("Test")
         let allData = response.data;
         console.log(allData);
         let statistics = allData.stats;
@@ -115,7 +121,11 @@ function changePoke(link) {
         
     }).then( () => {
 
+     
+
         image.src = ben.get(nameOfPokemon).picUrl;
+
+        
 
 
         hpNumber.innerText=ben.get(nameOfPokemon).hp;
