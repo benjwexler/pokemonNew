@@ -83,6 +83,7 @@ let nameOfPokemon = "jigglypuff";
 
 // link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
 link = "https://pokeapi.co/api/v2/pokemon/jigglypuff" 
+link = "//fizal.me/pokeapi/api/25.json"
 
 // link = "https://pokeapi-nycda.firebaseio.com/pokemon/39.json"
 
@@ -173,11 +174,13 @@ changePoke(link);
 nameOfPokemon = "charizard"
 // link = "https://pokeapi-nycda.firebaseio.com/pokemon/6.json"
 link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
+link = "//fizal.me/pokeapi/api/25.json"
 changePoke(link);
 
 nameOfPokemon = "pikachu"
 // link = "https://pokeapi-nycda.firebaseio.com/pokemon/25.json"
 link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
+link = "//fizal.me/pokeapi/api/25.json"
 // setTimeout(changePoke(link), 7500);
 changePoke(link);
 setTimeout(ben.all(), 1000);
