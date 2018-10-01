@@ -1,6 +1,6 @@
 let percentAdded = 23;
 
-Console.log("Right version?")
+console.log("Right version?")
 
 
 
