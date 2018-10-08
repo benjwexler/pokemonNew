@@ -16,6 +16,8 @@
 
 <body id="body">
 
+    <div id="nonMobile">
+
     <div id="boss">
         <div id="controllerLeft">
             <div id="sliderLeftContainer">
@@ -87,7 +89,7 @@
     <button id="start" onclick="initiate()">
         <div id="circle"></div>
     </button>
-    </div>
+   
     <div id="firstModal">
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="modyButton">
@@ -117,8 +119,48 @@
                 </div>
             </div>
         </div>
-
+        
     </div>
+</div>
+
+<div id="bossContainer">
+        <div id="borderTop">
+            Pikachu
+        </div>
+        <div id="picContainer">
+            <img id="mobilePic" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png">
+        </div>
+        <div id="skillsContainer">
+            <div class="skill">
+                <div class="text">
+                    HP
+                </div>
+                <div id="graphHP"></div>
+            </div>
+            <div class="skill">
+                <div class="text">
+                    Attack
+                </div>
+                <div id="graphAttack"></div>
+            </div>
+            <div class="skill">
+                <div class="text">
+                    Defense 
+                </div>
+                <div id="graphDefense"></div>
+            </div>
+        </div>
+        <div id="borderBottom">
+            <div class="changePoke" onclick="slidePrev()">
+                &#8249
+            </div>
+            <div class="changePoke" onclick="slideNext()">
+                &#8250
+            </div>
+        </div>
+    </div>
+
+
     <audio controls autoplay id="pushaT">
             <source src="/Users/bwexler/Desktop/WDF/w04/pokemon/PushaT.wav" type="audio/ogg">
             <source src="/Users/bwexler/Desktop/WDF/w04/pokemon/PushaT.wav" type="audio/mpeg">
@@ -126,8 +168,6 @@
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
     <script src="pokemonSwitch.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
