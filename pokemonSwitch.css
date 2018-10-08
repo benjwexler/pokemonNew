@@ -604,9 +604,8 @@
 
 #bossContainer {
   border: 1px solid black;
-  max-width: 700px;
-  height: 99vh;
-  min-height: 330px;
+  max-width: 414px;
+  height: 800px;
   max-height: 800px;
   margin: auto;
   display: none;
@@ -719,9 +718,22 @@
   font-size: 70px;
 }
 
+@media only screen and (max-width: 1000px) {
+  #bossContainer {
+    display: block;
+    margin-top: 55px;
+  }
+  #nonMobile {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 414px) {
   #bossContainer {
     display: block;
+    margin-top: 0px;
+    min-height: 330px;
+    height: 99vh;
   }
   #nonMobile {
     display: none;
