@@ -1,4 +1,4 @@
-let percentAdded = 23;
+let percentAdded = 26;
 
 console.log("Right version?")
 
@@ -32,9 +32,17 @@ let hpNumber = document.getElementById("hpNumber");
 let attackNumber = document.getElementById("attackNumber");
 let defenseNumber = document.getElementById("defenseNumber");
 let name = document.getElementById("name");
+let mobileName = document.getElementById("borderTop");
 let talents = document.getElementById("listOfAbilities");
 let image= document.getElementById("image");
+let mobilePic = document.getElementById("mobilePic");
 let modyBody=document.getElementById("modyBody");
+let graphHP = document.getElementById("graphHP");
+let hpBar = document.getElementById("hpParent");
+let attackBar = document.getElementById("attackParent");
+let graphAttack = document.getElementById("graphAttack");
+let defenseBar = document.getElementById("defenseParent");
+let graphDefense = document.getElementById("graphDefense");
 
 class Pokemon {
     constructor(name, hp, attack, defense, abilities, picUrl) {
@@ -70,7 +78,7 @@ let ben = new Trainer();
 let nameOfPokemon = "jigglypuff";
 
 link = "https://pokeapi.co/api/v2/pokemon/jigglypuff" 
-link = "//fizal.me/pokeapi/api/39.json"
+link = "https://fizal.me/pokeapi/api/39.json"
 
 
 
@@ -105,6 +113,7 @@ function changePoke(link) {
     }).then( () => {
 
         image.src = ben.get(nameOfPokemon).picUrl;
+        mobilePic.src = ben.get(nameOfPokemon).picUrl;
 
         hpNumber.innerText=ben.get(nameOfPokemon).hp;
 
@@ -120,17 +129,21 @@ function changePoke(link) {
 
         modyBody.innerText=(ben.get(nameOfPokemon).abilities).join(", ");
 
-        let hpBar = document.getElementById("hpParent");
+        
+        
         let hpNumberText = hpNumber.innerText
         hpBar.style.width = ((hpNumberText/255)*100)+percentAdded + "%"
+        graphHP.style.height = ((hpNumberText/255)*100)+percentAdded + "%"
         
-        let attackBar = document.getElementById("attackParent");
+       
             let attackNumberText = attackNumber.innerText
             attackBar.style.width = ((attackNumberText/190)*100)+percentAdded + "%"
+            graphAttack.style.height = ((hpNumberText/255)*100)+percentAdded + "%"
         
-            let defenseBar = document.getElementById("defenseParent");
+           
             let defenseNumberText = defenseNumber.innerText
             defenseBar.style.width = ((defenseNumberText/230)*100)+percentAdded + "%"
+            graphDefense.style.height = ((defenseNumberText/230)*100)+percentAdded + "%"
     }
         
     )
@@ -141,13 +154,13 @@ changePoke(link);
 
 nameOfPokemon = "charizard"
 link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
-link = "//fizal.me/pokeapi/api/6.json"
+link = "https://fizal.me/pokeapi/api/6.json"
 changePoke(link);
 
 nameOfPokemon = "pikachu"
 
 link = "https://pokeapi.co/api/v2/pokemon/" + nameOfPokemon;
-link = "//fizal.me/pokeapi/api/25.json"
+link = "https://fizal.me/pokeapi/api/25.json"
 
 changePoke(link);
 setTimeout(ben.all(), 1000);
@@ -170,24 +183,29 @@ function slideNext(){
     let upperCaseName = lowerCaseName.charAt(0).toUpperCase() + lowerCaseName.slice(1);
 
     name.innerText=upperCaseName;
+    mobileName.innerText=upperCaseName;
 
     image.src = ben.all()[i].picUrl;
+    mobilePic.src = ben.all()[i].picUrl;
     hpNumber.innerText=ben.all()[i].hp;
     attackNumber.innerText=ben.all()[i].attack;
     defenseNumber.innerText=ben.all()[i].defense;
     modyBody.innerText=((ben.all()[i].abilities).join(", "));
 
-    let hpBar = document.getElementById("hpParent");
+
     let hpNumberText = hpNumber.innerText
     hpBar.style.width = ((hpNumberText/255)*100)+percentAdded + "%"
+    graphHP.style.height = ((hpNumberText/255)*100)+percentAdded + "%"
 
-    let attackBar = document.getElementById("attackParent");
+
     let attackNumberText = attackNumber.innerText
     attackBar.style.width = ((attackNumberText/190)*100)+percentAdded + "%"
+    graphAttack.style.height = ((attackNumberText/190)*100)+percentAdded + "%"
 
-    let defenseBar = document.getElementById("defenseParent");
+
     let defenseNumberText = defenseNumber.innerText
     defenseBar.style.width = ((defenseNumberText/230)*100)+percentAdded + "%"
+    graphDefense.style.height = ((defenseNumberText/230)*100)+percentAdded + "%"
 }
 
 function slidePrev(){
@@ -205,24 +223,29 @@ function slidePrev(){
     let upperCaseName = lowerCaseName.charAt(0).toUpperCase() + lowerCaseName.slice(1);
 
     name.innerText=upperCaseName;
+    mobileName.innerText=upperCaseName;
 
     image.src = ben.all()[i].picUrl;
+    mobilePic.src = ben.all()[i].picUrl;
     hpNumber.innerText=ben.all()[i].hp;
     attackNumber.innerText=ben.all()[i].attack;
     defenseNumber.innerText=ben.all()[i].defense;
     modyBody.innerText=((ben.all()[i].abilities).join(", "));
 
-    let hpBar = document.getElementById("hpParent");
+
 let hpNumberText = hpNumber.innerText
 hpBar.style.width = ((hpNumberText/255)*100)+percentAdded + "%"
+graphHP.style.height = ((hpNumberText/255)*100)+percentAdded + "%"
 
-let attackBar = document.getElementById("attackParent");
+
     let attackNumberText = attackNumber.innerText
     attackBar.style.width = ((attackNumberText/190)*100)+percentAdded + "%"
+    graphAttack.style.height = ((attackNumberText/190)*100)+percentAdded + "%"
 
-    let defenseBar = document.getElementById("defenseParent");
+
     let defenseNumberText = defenseNumber.innerText
     defenseBar.style.width = ((defenseNumberText/230)*100)+percentAdded + "%"
+    graphDefense.style.height = ((defenseNumberText/230)*100)+percentAdded + "%"
     
 };
 
