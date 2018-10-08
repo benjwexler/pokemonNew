@@ -219,7 +219,7 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
     // margin: 180px auto auto auto;
     margin: 80px auto auto auto;
     justify-content: center;
-    max-width: 1250px; 
+    // max-width: 1250px; 
     // min-width: 1000px;
     // overflow: hidden;
 }
@@ -301,8 +301,7 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
 }
 
 #imageParent {
-    @include flexContainer(100%, 60%, 1px solid black, row);
-    border-right: 0px;
+    @include flexContainer(100%, 60%, 1px solid green, row);
     margin-left: 5%;
 }
 
@@ -312,25 +311,25 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
 }
 
 #skillsParent{
-    @include flexContainer(100%, 30%, 1px solid black, column);
+    @include flexContainer(100%, 30%, 1px solid green, column);
     margin-right: 5%;
 }
 
 .threeCol {
-    @include flexContainer(20%, 100%, 1px solid black, row);
+    @include flexContainer(20%, 100%, 1px solid green, row);
     font-family: Pokemon Solid;
     // border-bottom: 0px solid green;
 }
 
 #abilitiesContainer {
-    @include flexContainer(40%, 100%, 1px solid black, column);
+    @include flexContainer(40%, 100%, 1px solid green, column);
     font-family: Pokemon Solid;
     display: none;
 }
 
 
 #abilitiesStaticText{
-    @include flexContainer(15%, 100%, 1px solid black, row);
+    @include flexContainer(15%, 100%, 1px solid green, row);
     text-align: center;
     // justify-content: center;
     // font-family: Pokemon Hollow;
@@ -338,7 +337,7 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
 }
 
 #abilitiesDynamicTextContainer{
-    @include flexContainer(85%, 100%, 1px solid black, row);
+    @include flexContainer(85%, 100%, 1px solid green, row);
 }
 
 #listOfAbilities {
@@ -348,7 +347,7 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
 }
 
 #hpParent {
-    @include flexContainer(25%, 00%, 1px solid black, row);
+    @include flexContainer(25%, 00%, 1px solid green, row);
     background-color: yellow; 
     box-shadow: 2px 2px $graphBoxShaddow;
 }
@@ -362,7 +361,7 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
 } 
 
 #attackParent {
-    @include flexContainer(25%, 0%, 1px solid black, row);
+    @include flexContainer(25%, 0%, 1px solid green, row);
     background-color: yellow; 
     box-shadow: 2px 3px $graphBoxShaddow;
     // overflow: hidden;
@@ -378,7 +377,7 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
 }
 
 #defenseParent {
-    @include flexContainer(25%, 00%, 1px solid black, row);
+    @include flexContainer(25%, 00%, 1px solid green, row);
     background-color: yellow; 
     box-shadow: 2px 2px $graphBoxShaddow;
     
