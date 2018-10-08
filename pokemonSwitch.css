@@ -117,7 +117,6 @@
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 1250px;
-  min-width: 1000px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -255,7 +254,7 @@
 #imageParent {
   height: 100%;
   width: 60%;
-  border: 1px solid green;
+  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,6 +262,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  border-right: 0px;
   margin-left: 5%;
 }
 
@@ -274,7 +274,7 @@
 #skillsParent {
   height: 100%;
   width: 30%;
-  border: 1px solid green;
+  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -288,7 +288,7 @@
 .threeCol {
   height: 20%;
   width: 100%;
-  border: 1px solid green;
+  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,7 +302,7 @@
 #abilitiesContainer {
   height: 40%;
   width: 100%;
-  border: 1px solid green;
+  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -317,7 +317,7 @@
 #abilitiesStaticText {
   height: 15%;
   width: 100%;
-  border: 1px solid green;
+  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -332,7 +332,7 @@
 #abilitiesDynamicTextContainer {
   height: 85%;
   width: 100%;
-  border: 1px solid green;
+  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -360,7 +360,7 @@
 #hpParent {
   height: 25%;
   width: 0%;
-  border: 1px solid green;
+  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -393,7 +393,7 @@
 #attackParent {
   height: 25%;
   width: 0%;
-  border: 1px solid green;
+  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -426,7 +426,7 @@
 #defenseParent {
   height: 25%;
   width: 0%;
-  border: 1px solid green;
+  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
