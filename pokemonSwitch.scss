@@ -27,20 +27,6 @@ $controllerBorderSize: 000px;
 
 $graphBoxShaddow: rgba(54, 117, 128, 0.726);
 
-// $graphBoxShaddow: #00c3e3;
-
-// $graphBoxShaddow: rgb(66, 165, 66);
-
-
-
-// $graphBoxShaddow: #b5cf40;
-
-// $graphBoxShaddow: #c5cca5;
-// $graphBoxShaddow:#a2bd2c;
-// $bumperInnerBorder: #206d79;
-
-// $backgroundUrl: "https://bestwallpapers.co/wp-content/uploads/2018/05/wallpaper-design-awards-application-for-home-singapore-designs.jpg";
-
 $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-2505529.jpg";
 *{
     box-sizing: border-box;
@@ -48,14 +34,7 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
     
 }
 
-// body {
-//     // background: url("https://wallpaperstudio10.com/static/wpdb/wallpapers/1920x1080/169322.jpg") no-repeat center center fixed;
-//     background: url($backgroundUrl) no-repeat center center fixed;
-//     // background-size: 2000px 500px;
-    
-//     // background-image: url("https://images.unsplash.com/photo-1474540412665-1cdae210ae6b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=eaebfb6af1f3014a7b193b43d1a96d7b&w=1000&q=80")
-    
-// }
+
 
 #btn1 {
     height: 50px;
@@ -63,9 +42,7 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
     
 }
 
-// #body {
-//     cursor: progress;
-// }
+
 
 
 .btn-primary {
@@ -93,40 +70,23 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
     margin: auto;
   }
 
-//   .modal {
 
-//     // second try
-//     width: 15%;
-//     margin: auto 29% auto auto;
-//   }
 
 .modal-content {
-    // Good start
-    // border-radius: 50%;
+
     top:  144px;
     height: 420px;
-    // width: 100%;
+
     border-radius: 1%;
-    // background-color: #989898;
-    // display: none;
+
 }
 
-// .modal-content {
-//     // second try
-//     // border-radius: 50%;
-//     top:  144px;
-//     height: 410px;
-//     // width: 100%;
-//     border-radius: 10%;
-//     // background-color: #989898;
-//     // display: none;
-// }
+
 
 #firstModal {
-    // @include flexContainer(auto, 100%, 0px solid green, row);
+
     @include flexContainer(0px, 0px, 0px solid green, row);
-    // margin: auto;
-    // position: absolute;
+
     top: 480px;
     // left: 60%;
     // width: 100%;
@@ -496,14 +456,14 @@ $backgroundUrl: "https://stmed.net/sites/default/files/white-wallpapers-25354-25
     border: 1px solid black;
     max-width: 414px;
     height: 800px;
-    width: 100%;
+    width: 99%;
     max-height: 800px;
     margin: auto;
     display: none;
     
 }
 
-#borderTop {
+#borderTop { 
     border: 1px solid black;
     width: 100%;
     height: 15%;
