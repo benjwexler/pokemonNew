@@ -606,6 +606,7 @@
   border: 1px solid black;
   max-width: 414px;
   height: 800px;
+  width: 100%;
   max-height: 800px;
   margin: auto;
   display: none;
@@ -617,10 +618,10 @@
   height: 15%;
   background: #00c3e3;
   text-align: center;
-  font-size: 30px;
+  font-size: 28px;
   padding-top: 9%;
   font-family: Pokemon Solid;
-  letter-spacing: 20px;
+  letter-spacing: 19px;
 }
 
 #picContainer {
@@ -716,6 +717,17 @@
   border: 1px solid black;
   text-align: center;
   font-size: 70px;
+  position: relative;
+}
+
+.changePokeBtn {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 @media only screen and (max-width: 1000px) {
